@@ -324,19 +324,19 @@ footer {
 }
 
 .visual-a {
-  background-image: url("/static/assets/transitionA.png");
+  background-image: url("/assets/transitionA.png");
 }
 
 .visual-b {
-  background-image: url("/static/assets/transitionB.png");
+  background-image: url("/assets/transitionB.png");
 }
 
 .visual-c {
-  background-image: url("/static/assets/transitionC.png");
+  background-image: url("/assets/transitionC.png");
 }
 
 .visual-d {
-  background-image: url("/static/assets/transitionD.png");
+  background-image: url("/assets/transitionD.png");
 }
 
 .staff-card {
