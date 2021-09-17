@@ -1,6 +1,6 @@
 {
   "short_name": "Cinnamon",
-  "name": "Cinnamon: A bot to help run a Dank Memer server.",
+  "name": "Incredibly POWERFUL giveaway bot. Drops • Role reqs • Amari reqs • Nick reqs • UNB instant payouts | Timer • Fun • Calculator & MUCH MORE!",
   "icons": [
     {
       "src": "/images/icons-192.png",
@@ -18,5 +18,5 @@
   "display": "browser",
   "scope": "/",
   "theme_color": "#914814",
-  "description": "A Discord bot to help run a Dank Memer server."
+  "description": "Incredibly POWERFUL giveaway bot. Drops • Role reqs • Amari reqs • Nick reqs • UNB instant payouts | Timer • Fun • Calculator & MUCH MORE!"
 }
