@@ -109,18 +109,13 @@ a:active { text-decoration: none; }
   background-size: cover;
 }
 
-.section-type-a .button {
-  border: 1px solid black;
-  background-color: #ffffff;
-  color: black;
-}
-
 .section-type-b {
   background-color: #673009;
   background-size: cover;
   display: flex;
   flex-direction: row;
 }
+
 .section-type-c {
   background-color: #3d1b03;
   background-size: cover;
@@ -177,8 +172,13 @@ a:active { text-decoration: none; }
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  color: #ffffff;
   border-radius: 5px;
   border: 1px solid black;
+}
+
+.topnav a.active {
+  background: #914814;
 }
 
 .topnavitem {
@@ -187,24 +187,14 @@ a:active { text-decoration: none; }
 
 .topnavitem a, .dropbtn {
   display: inline-block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .topnavitem a:hover, .dropdown:hover .dropbtn {
-  background-color: #ca641c;
-  color: #fff;
-}
-
-.topnav a.active {
-  background: #914814;
-  color: white;
-}
-
-.topnav a.active:hover {
   background-color: #ca641c;
 }
 
@@ -213,12 +203,15 @@ a:active { text-decoration: none; }
 }
 
 .dropdown-content {
-  display: none;
+  opacity: 0;
   position: absolute;
   background-color: #393b40;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .dropdown-content a {
@@ -235,7 +228,9 @@ a:active { text-decoration: none; }
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .button {
@@ -245,7 +240,7 @@ a:active { text-decoration: none; }
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   border-radius: 5px;
   border: 1px solid black;
   background-color: #ffffff;
@@ -254,6 +249,7 @@ a:active { text-decoration: none; }
 
 .button:hover {
   background-color: #ca641c;
+  color: #ffffff;
 }
 
 code {
@@ -272,7 +268,7 @@ footer {
   background-color: #36393e;
   color: #ffffff;
   padding-top: 2%;
-  padding-bottom: 4%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
