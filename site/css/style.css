@@ -177,6 +177,7 @@ a:active { text-decoration: none; }
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  color: #ffffff;
   border-radius: 5px;
   border: 1px solid black;
 }
@@ -187,24 +188,18 @@ a:active { text-decoration: none; }
 
 .topnavitem a, .dropbtn {
   display: inline-block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 0.3s;
-}
-
-.topnavitem a:hover, .dropdown:hover .dropbtn {
-  background-color: #ca641c;
-  color: #fff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .topnav a.active {
   background: #914814;
-  color: white;
 }
 
-.topnav a.active:hover {
+.topnavitem a:hover, .dropdown:hover .dropbtn {
   background-color: #ca641c;
 }
 
