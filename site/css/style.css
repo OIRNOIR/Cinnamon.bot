@@ -182,6 +182,10 @@ a:active { text-decoration: none; }
   border: 1px solid black;
 }
 
+.topnav a.active {
+  background: #914814;
+}
+
 .topnavitem {
   float: left;
 }
@@ -193,10 +197,6 @@ a:active { text-decoration: none; }
   padding: 14px 16px;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
-}
-
-.topnav a.active {
-  background: #914814;
 }
 
 .topnavitem a:hover, .dropdown:hover .dropbtn {
