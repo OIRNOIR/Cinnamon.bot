@@ -211,9 +211,6 @@ a:active { text-decoration: none; }
   z-index: 1;
   transform: translateY(-10px);
   pointer-events: none;
-}
-
-.dropdown-content {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
