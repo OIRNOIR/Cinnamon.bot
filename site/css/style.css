@@ -209,8 +209,8 @@ a:active { text-decoration: none; }
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   pointer-events: none;
 }
 
