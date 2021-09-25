@@ -3,6 +3,7 @@ body {
   background-color: #914814;
   color: #ffffff;
   margin: 0px;
+  max-width: 100%;
 }
 
 a:link { text-decoration: none; }
