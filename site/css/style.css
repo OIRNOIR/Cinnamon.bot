@@ -1,9 +1,12 @@
+* {
+  max-width: 100%;
+}
+
 body {
   font-family: arial, helvetica, sans-serif;
   background-color: #914814;
   color: #ffffff;
   margin: 0px;
-  max-width: 100%;
 }
 
 a:link { text-decoration: none; }
