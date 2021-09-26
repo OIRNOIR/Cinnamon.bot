@@ -386,6 +386,10 @@ footer {
   color: #ffffff;
 }
 
+.staff-card-details-name a:hover {
+  text-decoration: underline;
+}
+
 .staff-card-details-role {
   color: #ededed;
   padding: 0;
