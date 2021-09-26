@@ -382,6 +382,10 @@ footer {
   margin: 0;
 }
 
+.staff-card-details-name a {
+  color: #ffffff;
+}
+
 .staff-card-details-role {
   color: #ededed;
   padding: 0;
