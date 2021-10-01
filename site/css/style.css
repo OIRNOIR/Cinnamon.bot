@@ -17,7 +17,7 @@ a:active { text-decoration: none; }
 
 .content a:visited { text-decoration: none; color: #ca641c; }
 
-.content a:hover { text-decoration: none; color: #ca641c; }
+.content a:hover { text-decoration: underline; color: #ca641c; }
 
 .content a:active { text-decoration: none; color: #ca641c; }
 
