@@ -497,7 +497,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 365px) {
   .section-title {
     font-size: 2rem;
   }
