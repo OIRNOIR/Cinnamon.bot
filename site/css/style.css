@@ -492,6 +492,6 @@ footer {
     margin-right: 5px;
   }
   .topnavitem a, .dropbtn, .dropdown-content a {
-    padding: 8px 2px;
+    padding: 8px 1px;
   }
 }
