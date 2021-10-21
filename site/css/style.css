@@ -583,6 +583,6 @@ footer {
   }
   .topnavitem a, .dropbtn, .dropdown-content a {
     padding: 8px 1px;
-    font-size: 1vw;
+    font-size: 10vw;
   }
 }
