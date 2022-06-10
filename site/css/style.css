@@ -320,19 +320,19 @@ footer {
 }
 
 .visual-a {
-  background-image: url("/assets/transitionA.png");
+  background-image: url("https://assets.cinnamon.gifts/transitionA.png");
 }
 
 .visual-b {
-  background-image: url("/assets/transitionB.png");
+  background-image: url("https://assets.cinnamon.gifts/transitionB.png");
 }
 
 .visual-c {
-  background-image: url("/assets/transitionC.png");
+  background-image: url("https://assets.cinnamon.gifts/transitionC.png");
 }
 
 .visual-d {
-  background-image: url("/assets/transitionD.png");
+  background-image: url("https://assets.cinnamon.gifts/transitionD.png");
 }
 
 .staff-card {
