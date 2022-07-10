@@ -5,4 +5,3 @@ The website for Cinnnamon
 Unauthorized use prohibited.
 
 This is the code for https://cinnamon.gifts/.
-For https://invite.cinnamon.gifts/, please visit the `invite` branch.
