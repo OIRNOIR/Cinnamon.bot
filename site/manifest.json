@@ -1,22 +1,22 @@
 {
-  "short_name": "Cinnamon",
-  "name": "Incredibly POWERFUL giveaway bot. Drops • Role reqs • Amari reqs • Nick reqs • UNB instant payouts | Timer • Fun • Calculator & MUCH MORE!",
-  "icons": [
-    {
-      "src": "/images/icons-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/images/icons-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "/",
-  "background_color": "#36393e",
-  "display": "browser",
-  "scope": "/",
-  "theme_color": "#914814",
-  "description": "Incredibly POWERFUL giveaway bot. Drops • Role reqs • Amari reqs • Nick reqs • UNB instant payouts | Timer • Fun • Calculator & MUCH MORE!"
+	"short_name": "Cinnamon",
+	"name": "Incredibly POWERFUL giveaway bot. Drops • Role reqs • Amari reqs • Nick reqs • UNB instant payouts | Timer • Fun • Calculator & MUCH MORE!",
+	"icons": [
+		{
+			"src": "/images/icons-192.png",
+			"type": "image/png",
+		"sizes": "192x192"
+		},
+		{
+			"src": "/images/icons-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#36393e",
+	"display": "browser",
+	"scope": "/",
+	"theme_color": "#914814",
+	"description": "Incredibly POWERFUL giveaway bot. Drops • Role reqs • Amari reqs • Nick reqs • UNB instant payouts | Timer • Fun • Calculator & MUCH MORE!"
 }
