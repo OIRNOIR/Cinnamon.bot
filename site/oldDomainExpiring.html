@@ -9,14 +9,14 @@
 		</style>
 	</head>
 	<body>
-		<h1 id="title">This domain is expiring.</h1>
+		<h1 id="title">The domain you clicked on is expiring.</h1>
 		<p>
 			We've switched to a new one - <a href="https://cinnamon.gifts/">cinnamon.gifts</a>. Please bookmark the new one. Thank you.
 		</p>
 		<script>
 			const urlParams = new URLSearchParams(location.search);
 			if (urlParams.has('from')) {
-				document.getElementById('title').innerText = `This domain, ${urlParams.get('from')}, is expiring.`;
+				document.getElementById('title').innerText = `The domain, ${urlParams.get('from')}, is expiring.`;
 			}
 		</script>
 	</body>
