@@ -411,17 +411,12 @@ footer {
 
 .staff-card-about-container {
 	height: 63%;
-	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 	white-space: pre-wrap;
 	padding: 0;
 	margin: 0;
 	margin-top: 14px;
-}
-
-.staff-card-about-container .staff-card-details-about.v-scroll {
-	transform: translateY(2em);
-	animation: vScroll 25s linear infinite;
-	display: block;
 }
 
 #staff {
