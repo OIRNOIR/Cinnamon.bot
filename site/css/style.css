@@ -197,6 +197,10 @@ a:active { text-decoration: none; }
 	float: left;
 }
 
+.topnavitem.right {
+	float: right;
+}
+
 .topnavitem a, .dropbtn {
 	display: inline-block;
 	color: #ffffff;
