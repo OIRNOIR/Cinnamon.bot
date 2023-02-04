@@ -321,7 +321,7 @@ code {
 }
 
 #cinnamonlogo {
-	width: 15em;
+	height: 15em;
 	margin: 20px;
 }
 
@@ -338,6 +338,7 @@ footer {
 
 .footer-logo {
 	height: 15rem;
+	margin-right: 40px;
 }
 
 .footer-logo-container {
