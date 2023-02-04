@@ -294,11 +294,6 @@ a:active {
 	pointer-events: auto;
 }
 
-.button:hover {
-	background-color: #ca641c;
-	color: #ffffff;
-}
-
 .button {
 	text-decoration: none;
 	padding: 15px 32px;
@@ -310,6 +305,11 @@ a:active {
 	border: 1px solid black;
 	background-color: #ffffff;
 	color: black;
+}
+
+.button:hover {
+	background-color: #ca641c;
+	color: #ffffff;
 }
 
 code {
