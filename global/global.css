@@ -343,7 +343,7 @@ footer {
 .footer-text-container {
 	margin: auto;
 	display: flex;
-	column-gap: 60px;
+	column-gap: 1vw;
 }
 
 .footer-column-container {
