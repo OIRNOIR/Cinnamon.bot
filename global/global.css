@@ -481,24 +481,12 @@ footer {
 	.section-img-container {
 		padding: 0px;
 		text-align: center;
-		/*margin-bottom: 5rem;
-		margin-left: 5rem;
-		width: 50%;*/
-	}
-
-	/*.section-content {
+		margin: auto;
 		width: 75%;
-	}*/
+	}
 
 	.section-content {
 		width: unset;
-	}
-
-	.section-img-container {
-		margin-left: unset;
-		margin-bottom: unset;
-		margin: auto;
-		width: 75%;
 	}
 }
 
