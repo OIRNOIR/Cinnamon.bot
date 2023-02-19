@@ -1,6 +1,7 @@
 / https://discord.com/api/oauth2/authorize?client_id=807692666107985941&permissions=274878385152&scope=bot%20applications.commands
 /beta https://discord.com/api/oauth2/authorize?client_id=888901421590798338&permissions=274878385152&scope=bot%20applications.commands
 /support https://discord.gg/GnCHz2z6WK
+/appeals https://discord.gg/4YKA4bd9BU
 
 # Redirect for 404s
 /* https://cinnamon.bot/:splat
