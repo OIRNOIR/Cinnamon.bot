@@ -215,6 +215,11 @@ a:active {
 	text-align: center;
 }
 
+.notice-message-image {
+	text-align: center;
+	height: 7em;
+}
+
 .top-section-content h1 {
 	font-size: 8vw;
 	text-shadow: 5px 5px 0px black;
