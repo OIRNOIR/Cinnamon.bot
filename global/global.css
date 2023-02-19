@@ -223,6 +223,7 @@ a:active {
 .notice-message img {
 	height: 100%;
 	width: auto;
+	border-radius: 30%;
 }
 
 .top-section-content h1 {
