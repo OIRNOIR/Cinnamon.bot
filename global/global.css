@@ -313,9 +313,7 @@ footer {
 .visual {
 	height: 300px;
 	background-repeat: no-repeat;
-	background-size: 105%;
-	overflow: hidden;
-	background-position-x: 50%;
+	background-size: cover;
 }
 
 .visual-a {
