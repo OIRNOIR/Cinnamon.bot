@@ -1,3 +1,7 @@
+:root {
+	--link-color: #ca641c;
+}
+
 body {
 	font-family: arial, helvetica, sans-serif;
 	background-color: #914814;
@@ -23,22 +27,22 @@ a:active {
 
 .content a:link {
 	text-decoration: none;
-	color: #ca641c;
+	color: var(--link-color);
 }
 
 .content a:visited {
 	text-decoration: none;
-	color: #ca641c;
+	color: var(--link-color);
 }
 
 .content a:hover {
 	text-decoration: underline;
-	color: #ca641c;
+	color: var(--link-color);
 }
 
 .content a:active {
 	text-decoration: none;
-	color: #ca641c;
+	color: var(--link-color);
 }
 
 .footer-column a:link {
