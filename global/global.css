@@ -266,6 +266,11 @@ a:active {
 	display: inline-block;
 }
 
+.button.backHomeButton {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .dropdown-content {
 	opacity: 0;
 	position: absolute;
