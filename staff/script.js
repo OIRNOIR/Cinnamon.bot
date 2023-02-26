@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 	const converter = new showdown.Converter();
 	let dataRes;
 	try {
-		dataRes = await fetch("https://api.cinnamon.bot/api/staff", {cache: "default"});
+		dataRes = await fetch("https://api.cinnamon.bot/api/staff");
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
