@@ -3,7 +3,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 	showdown.setOption("simpleLineBreaks", true);
 	showdown.setOption("simplifiedAutoLink", true);
 	const converter = new showdown.Converter();
-	const dataRes = await fetch("https://api.cinnamon.bot/api/staff", {cache: "default"});
+	let dataRes;
+	try {
+		dataRes = await fetch("https://api.cinnamon.bot/api/staff", {cache: "default"});
+	} catch {
+		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
+	}
 	const data = await dataRes.json();
 	const categoryContainer = document.getElementById("staff-categories");
 
