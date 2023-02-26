@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
-	const dataRes = await fetch("https://api-beta.cinnamon.bot/api/staff");
+	showdown.setOption("openLinksInNewWindow", true);
+	showdown.setOption("simpleLineBreaks", true);
+	showdown.setOption("simplifiedAutoLink", true);
+	const converter = new showdown.Converter();
+	const dataRes = await fetch("https://api.cinnamon.bot/api/staff");
 	const data = await dataRes.json();
 	const categoryContainer = document.getElementById("staff-categories");
+
 	for (const category of data) {
 		const categoryElement = document.createElement("div");
 		categoryElement.classList.add("staff-category");
@@ -49,6 +54,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 			details.appendChild(textDetails);
 
 			cardElement.appendChild(details);
+
+			const aboutContainer = document.createElement("div");
+			aboutContainer.classList.add("staff-card-about-container");
+
+			const aboutContent = document.createElement("p");
+			aboutContent.classList.add("staff-card-details-about", "content");
+			aboutContent.innerHTML = converter.makeHtml(card.bio);
+			aboutContainer.appendChild(aboutContent);
+
+			cardElement.appendChild(aboutContainer);
 
 			cardContainer.appendChild(cardElement);
 		}
