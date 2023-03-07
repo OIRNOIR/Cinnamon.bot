@@ -142,7 +142,7 @@ a:active {
 }
 
 .section-type-a {
-	background-color: #914814;
+	background-color: #3d1b03;
 	background-size: cover;
 }
 
@@ -154,7 +154,7 @@ a:active {
 }
 
 .section-type-c {
-	background-color: #3d1b03;
+	background-color: #914814;
 	background-size: cover;
 	display: flex;
 	flex-direction: row-reverse;
