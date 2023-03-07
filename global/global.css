@@ -346,6 +346,10 @@ footer {
 	background-image: url("https://assets.cinnamon.bot/transition-d.png");
 }
 
+.visual-e {
+	background-image: url("https://assets.cinnamon.bot/transition-e.svg");
+}
+
 .staff-card {
 	position: relative;
 	overflow: hidden;
