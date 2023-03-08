@@ -120,6 +120,7 @@ a:active {
 .top-section-content {
 	margin: 3rem;
 	flex-direction: column;
+	display: flex;
 }
 
 .section-img-container {
@@ -268,7 +269,7 @@ code {
 
 #cinnamonlogo {
 	max-height: 15em;
-	margin: 20px;
+	margin: 20px auto;
 	filter: drop-shadow(0 5px 10px rgb(0,0,0,0.3));
 }
 
