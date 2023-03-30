@@ -1,4 +1,3 @@
 /*
   Access-Control-Allow-Origin: *
   Content-Security-Policy: default-src 'self' https://cinnamon.bot/ https://*.cinnamon.bot https://oirnoir.dev/ https://*.oirnoir.dev/; script-src 'self' https://cinnamon.bot/ https://*.cinnamon.bot https://oirnoir.dev/ https://*.oirnoir.dev/; style-src 'self' https://cinnamon.bot/ https://*.cinnamon.bot https://oirnoir.dev/ https://*.oirnoir.dev/; img-src 'self' https://cinnamon.bot/ https://*.cinnamon.bot https://oirnoir.dev/ https://*.oirnoir.dev/ https://cdn.discordapp.com/avatars/;
-	Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
