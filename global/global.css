@@ -435,6 +435,7 @@ footer {
 #staff #staff-categories {
 	width: 95%;
 	max-width: 1335px;
+	margin-bottom: 60px;
 }
 
 #staff #staff-categories .staff-category-title {
