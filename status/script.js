@@ -41,7 +41,7 @@ async function refresh() {
 		element.innerText = `${shard.id}${letter}`;
 		indicators.push(element);
 	}
-	statusIcons.replaceChildren(indicators);
+	statusIcons.replaceChildren(...indicators);
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
