@@ -1,0 +1,48 @@
+#status {
+	display: flex;
+	flex-direction: column;
+}
+
+#status-key {
+	margin: auto;
+}
+
+#status-icons {
+	display: flex;
+	flex-direction: unset;
+	flex-wrap: wrap;
+	column-gap: 10px;
+	row-gap: 10px;
+	margin: auto;
+	background-color: #673009;
+	padding: 20px;
+	border-radius: 15px;
+	max-width: 75%;
+}
+
+.status-icon {
+	width: 50px;
+	height: 50px;
+	background-color: #222222;
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	font-weight: bolder;
+}
+
+.status-0 {
+	color: #ff0000;
+}
+
+.status-1 {
+	color: #eea322;
+}
+
+.status-2 {
+	color: #d3ee22;
+}
+
+.status-3 {
+	color: #22ee22;
+}
