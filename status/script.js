@@ -46,4 +46,13 @@ async function refresh() {
 
 document.addEventListener('DOMContentLoaded', async () => {
 	refresh();
+	let secondsUntilRefresh = 30;
+	setInterval(async () => {
+		secondsUntilRefresh--;
+		if (secondsUntilRefresh <= 0) {
+			secondsUntilRefresh = 30;
+			refresh();
+		}
+		document.getElementById("durationUntilRefresh").innerText = secondsUntilRefresh;
+	}, 1000);
 });
