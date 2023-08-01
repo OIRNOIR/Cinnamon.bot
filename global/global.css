@@ -103,10 +103,6 @@ a:active {
 	justify-content: center;
 }
 
-.privacy-container {
-	margin: 3rem;
-}
-
 .section-title {
 	font-weight: 700;
 	font-size: 3rem;
@@ -159,53 +155,6 @@ a:active {
 	background-size: cover;
 	display: flex;
 	flex-direction: row-reverse;
-}
-
-.centralizediv {
-	margin: auto;
-	width: 30%;
-	padding: 10px;
-	text-align: center;
-}
-
-#rulesContainer {
-	margin: auto;
-	width: 70%;
-	text-align: center;
-}
-
-.margin {
-	margin: 5rem;
-}
-
-.rule {
-	border: 2px solid #914814;
-	border-radius: 10px;
-	background-color: #673009;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 10px;
-	text-align: left;
-}
-
-.ruletitle {
-	padding: 0px;
-	margin: 0px;
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.ruleshortdesc {
-	padding: 0px;
-	margin: 0px;
-	font-size: 20px;
-}
-
-.rulelongdesc {
-	padding: 0px;
-	margin: 0px;
-	color: #cccccc;
 }
 
 .notice-message {
@@ -353,125 +302,6 @@ footer {
 
 .visual-e {
 	background-image: url("https://assets.cinnamon.bot/transition-e.png");
-}
-
-.staff-card {
-	position: relative;
-	overflow: hidden;
-	width: 275px;
-	height: 340px;
-	background: #673009;
-	border-radius: 5px;
-	padding: 20px;
-	margin: 0;
-}
-
-.staff-card-details {
-	display: flex;
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-}
-
-.staff-card-details-text {
-	max-width: calc(100% - 124px);
-	margin: 0;
-	margin-top: 10px;
-	margin-left: 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	padding: 0;
-}
-
-.staff-card-details-picture {
-	background-color: #414942;
-	min-width: 110px;
-	max-width: 110px;
-	min-height: 110px;
-	max-height: 110px;
-	border-radius: 5px;
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-}
-
-.staff-card-details-name {
-	font-size: 24px;
-	padding: 0;
-	margin: 0;
-}
-
-.staff-card-details-name a {
-	color: #ffffff;
-}
-
-.staff-card-details-name a:hover {
-	text-decoration: underline;
-}
-
-.staff-card-details-pomelo, .staff-card-details-pomelo a {
-	color: #cbcbcb;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 3px;
-	font-size: 14px;
-}
-
-.staff-card-details-pomelo a:hover {
-	text-decoration: underline;
-}
-
-.staff-card-details-role {
-	color: #ededed;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 20px
-}
-
-.staff-card-about-container {
-	height: 63%;
-	overflow-y: auto;
-	overflow-x: hidden;
-	padding: 0;
-	margin: 0;
-	margin-top: 14px;
-}
-
-#staff {
-	margin-bottom: 30px;
-	display: grid;
-	place-items: center;
-}
-
-#staff #staff-categories {
-	width: 95%;
-	max-width: 1335px;
-	margin-bottom: 60px;
-}
-
-#staff #staff-categories .staff-category-title {
-	font-size: 36px;
-	margin-top: 10vh;
-	margin-bottom: 30px;
-	text-shadow: 3px 3px 0 #000;
-}
-
-#staff #staff-categories .staff-category-cards {
-	display: grid;
-	grid-auto-flow: row;
-	justify-content: space-between;
-	align-content: start;
-}
-
-#staff #staff-categories .staff-category-cards.large-grid {
-	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-	grid-gap: 50px 58px;
-}
-
-#staff #staff-categories .staff-category-cards.compact-grid {
-	grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
-	gap: 40px 45px;
 }
 
 @media screen and (max-width: 1100px) {
