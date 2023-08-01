@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 			const textDetails = document.createElement("div");
 			textDetails.classList.add("staff-card-details-text");
 
-			const globalName = document.createElement("h2");
-			globalName.classList.add("staff-card-details-name");
-			globalName.innerText = card.globalName;
-			textDetails.appendChild(globalName);
+			const displayName = document.createElement("h2");
+			displayName.classList.add("staff-card-details-name");
+			displayName.innerText = card.displayName;
+			textDetails.appendChild(displayName);
 			
 			const pomelo = document.createElement("p");
 			pomelo.classList.add("staff-card-details-pomelo");
