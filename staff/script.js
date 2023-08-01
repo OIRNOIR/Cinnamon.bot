@@ -41,15 +41,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 			const textDetails = document.createElement("div");
 			textDetails.classList.add("staff-card-details-text");
 
-			const username = document.createElement("h2");
-			username.classList.add("staff-card-details-name");
+			const globalName = document.createElement("h2");
+			globalName.classList.add("staff-card-details-name");
+			globalName.innerText = card.globalName;
+			textDetails.appendChild(globalName);
+			
+			const pomelo = document.createElement("p");
+			pomelo.classList.add("staff-card-details-pomelo");
 			const usernameLink = document.createElement("a");
 			usernameLink.setAttribute("target", "_blank");
 			usernameLink.setAttribute("rel", "noreferrer noopener");
 			usernameLink.setAttribute("href", "https://discord.com/users/" + card.id);
 			usernameLink.innerText = card.username;
-			username.appendChild(usernameLink);
-			textDetails.appendChild(username);
+			pomelo.appendChild(usernameLink);
 
 			const role = document.createElement("p");
 			role.classList.add("staff-card-details-role");
