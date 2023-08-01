@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 			usernameLink.setAttribute("href", "https://discord.com/users/" + card.id);
 			usernameLink.innerText = card.username;
 			pomelo.appendChild(usernameLink);
+			textDetails.appendChild(pomelo);
 
 			const role = document.createElement("p");
 			role.classList.add("staff-card-details-role");
