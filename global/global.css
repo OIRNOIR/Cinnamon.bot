@@ -414,8 +414,12 @@ footer {
 	color: #cbcbcb;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 20px;
-	font-size: 10px;
+	margin-bottom: 3px;
+	font-size: 14px;
+}
+
+.staff-card-details-pomelo a:hover {
+	text-decoration: underline;
 }
 
 .staff-card-details-role {
