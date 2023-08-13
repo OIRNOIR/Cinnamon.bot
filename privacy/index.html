@@ -62,7 +62,9 @@
 				No data is used or collected for analytical purposes.
 			</p>
 			<p class="content">
-				No messages that are received by Cinnamon are stored.
+				No message content that is received by Cinnamon is stored.<br>
+				For giveaways such as those with message requirements, it is necessary to store a minimal amount of information about messages recieved. Before a message is stored, it is evaluated to determine whether storage of this message is required or not. If there is no active giveaway that requires the message information, it is not stored. Such message information is also deleted from Cinnamon's database when the giveaway is.<br>The information stored about messages, in the rare case that data must be stored, consists of channel and server identifiers, along with the length of the message's content and how many attachments were added to the message.<br>
+				You may opt-out of message data collection at any time by running the command <code>/settings setting:Message Content Opt-Out</code>, which toggles your opt-out status. Reauthorization of message content data use may be completed the same way. While you are opted out of message data collection, you will be unable to join any giveaway that requires that you have a message count, because those giveaways require that data to be present.
 			</p>
 			<p class="content">
 				If you have questions about this policy or wish to view or delete your data, please DM @oirnoir on Discord.
