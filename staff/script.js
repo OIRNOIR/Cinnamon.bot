@@ -1,11 +1,11 @@
-async function loadStaff () {
+async function loadStaff (token) {
 	showdown.setOption("openLinksInNewWindow", true);
 	showdown.setOption("simpleLineBreaks", true);
 	showdown.setOption("simplifiedAutoLink", true);
 	const converter = new showdown.Converter();
 	let dataRes;
 	try {
-		dataRes = await fetch("https://api.cinnamon.bot/api/staff/");
+		dataRes = await fetch("https://api.cinnamon.bot/api/staff/", {headers: {"X-Captcha-Token": token}});
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
