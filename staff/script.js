@@ -1,5 +1,4 @@
 async function loadStaff (token) {
-	console.log(token);
 	showdown.setOption("openLinksInNewWindow", true);
 	showdown.setOption("simpleLineBreaks", true);
 	showdown.setOption("simplifiedAutoLink", true);
