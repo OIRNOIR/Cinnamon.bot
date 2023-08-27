@@ -9,6 +9,7 @@ async function loadStaff (token) {
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
+	if (dataRes.status == 400) alert("Captcha Failed");
 	const data = await dataRes.json();
 	const categoryContainer = document.getElementById("staff-categories");
 
