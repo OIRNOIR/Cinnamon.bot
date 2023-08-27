@@ -1,4 +1,7 @@
+let staffLoaded = false;
+
 async function loadStaff (token) {
+	if (staffLoaded) return;
 	showdown.setOption("openLinksInNewWindow", true);
 	showdown.setOption("simpleLineBreaks", true);
 	showdown.setOption("simplifiedAutoLink", true);
@@ -10,6 +13,7 @@ async function loadStaff (token) {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
 	if (dataRes.status == 400) alert("Captcha Failed");
+	staffLoaded = true;
 	const data = await dataRes.json();
 	const categoryContainer = document.getElementById("staff-categories");
 
