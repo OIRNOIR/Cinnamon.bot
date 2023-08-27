@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', async () => {
+async function loadStaff () {
 	showdown.setOption("openLinksInNewWindow", true);
 	showdown.setOption("simpleLineBreaks", true);
 	showdown.setOption("simplifiedAutoLink", true);
@@ -82,4 +82,4 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 		categoryContainer.appendChild(categoryElement);
 	}
-});
+}
