@@ -10,7 +10,7 @@ async function turnstileCallback (token) {
 	} else {
 		host = "api.cinnamon.bot";
 	}
-	const res = await fetch(host + "/api/giveaways/verify", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({
+	const res = await fetch("https://" + host + "/api/giveaways/verify", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({
 		token,
 		verifyKey: urlParams.get("v")
 	})});
