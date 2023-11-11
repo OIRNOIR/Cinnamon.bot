@@ -11,10 +11,17 @@ async function turnstileCallback (token) {
 	} else {
 		host = "api.cinnamon.bot";
 	}
-	const res = await fetch("https://" + host + "/api/giveaways/verify", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({
-		token,
-		verifyKey: urlParams.get("v")
-	})});
+	let res;
+	try {
+		res = await fetch("https://" + host + "/api/giveaways/verify", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({
+			token,
+			verifyKey: urlParams.get("v")
+		})});
+	} catch (err) {
+		console.error(err);
+		status.innerText = "Connection Failure! Please check the status page.";
+		return;
+	}
 	const text = await res.text();
 	if (String(res.status).startsWith("5")) status.innerText = "Internal Server Error. Please report this error.";
 	else switch (res.status) {
