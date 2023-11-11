@@ -187,6 +187,12 @@ a:active {
 }
 
 .top-section-content h2 {
+	font-size: 2.5em;
+	text-shadow: 3px 3px 0px black;
+}
+
+.top-section-content h3 {
+	font-size: 1.5em;
 	text-shadow: 2px 2px 0px black;
 }
 
