@@ -64,9 +64,11 @@
 				No data is used or collected for analytical purposes.
 			</p>
 			<p class="content">
-				No message content that is received by Cinnamon is stored.<br>
+				No message content that is automatically received by Cinnamon is stored.<br>
 				For giveaways such as those with message requirements, it is necessary to store a minimal amount of information about messages recieved. Before a message is stored, it is evaluated to determine whether storage of this message is required or not. If there is no active giveaway that requires the message information, it is not stored. Such message information is also deleted from Cinnamon's database when the giveaway is.<br>The information stored about messages, in the rare case that data must be stored, consists of channel and server identifiers, along with the length of the message's content and how many attachments were added to the message.<br>
-				You may opt-out of message data collection at any time by running the command <code>/settings setting:Message Content Opt-Out</code>, which toggles your opt-out status. Reauthorization of message content data use may be completed the same way. While you are opted out of message data collection, you will be unable to join any giveaway that requires that you have a message count, because those giveaways require that data to be present.
+				You may opt-out of message data collection at any time by running the command <code>/settings setting:Message Content Opt-Out</code>, which toggles your opt-out status. Reauthorization of message content data use may be completed the same way. While you are opted out of message data collection, you will be unable to join any giveaway that requires that you have a message count, because those giveaways require that data to be present.<br>
+				<br>
+				To resolve selected images for giveaways with images hosted on Discord, if you select a link to a message instead of a link to an image, Cinnamon will attempt to collect the content and attachments of the specified message only. The first image link it finds in the specified message will be cached for up to five minutes to allow giveaway images to work. Non-link message contents, other attachments, and anything other than a valid Discord attachment image link will be completely ignored in this process.
 			</p>
 			<p class="content">
 				If you have questions about this policy or wish to view or delete your data, please DM @oirnoir on Discord.
