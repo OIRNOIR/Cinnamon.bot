@@ -75,7 +75,7 @@ async function loadStaff (token) {
 
 			const aboutContent = document.createElement("p");
 			aboutContent.classList.add("staff-card-details-about", "content");
-			aboutContent.innerHTML = converter.makeHtml(card.bio);
+			aboutContent.innerHTML = converter.makeHtml(card.bio); // Note that this approach would not be safe from XSS if the source of card.bio was unverifiable. However, since we are securely connecting to Cinnamon's servers which serve manually curated information, it is safe for this use case.
 			aboutContainer.appendChild(aboutContent);
 
 			cardElement.appendChild(aboutContainer);
