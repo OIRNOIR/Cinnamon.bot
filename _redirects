@@ -1,4 +1,10 @@
-/ https://discord.com/api/oauth2/authorize?client_id=807692666107985941&permissions=274878385152&scope=bot%20applications.commands
+/ https://cinnamon.bot/
+/invite https://discord.com/api/oauth2/authorize?client_id=807692666107985941&permissions=274878385152&scope=bot%20applications.commands
 /beta https://discord.com/api/oauth2/authorize?client_id=888901421590798338&permissions=274878385152&scope=bot%20applications.commands
 /support https://discord.gg/GnCHz2z6WK
 /appeals https://discord.gg/4YKA4bd9BU
+
+/vote /vote/top
+/vote/top https://top.gg/bot/807692666107985941/vote
+/vote/topgg /top
+/vote/dbl https://discordbotlist.com/bots/cinnamon/upvote
