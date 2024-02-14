@@ -3,7 +3,7 @@ let verified = false;
 async function turnstileCallback (token) {
 	if (verified) return;
 	const status = document.getElementById("status-container");
-	status.innerText = "Verifying your entry...";
+	status.innerText = "Verifying your entry. Please wait...";
 	const urlParams = new URLSearchParams(window.location.search);
 	let host;
 	if (urlParams.has("h") && urlParams.get("h") == "beta") {
