@@ -1,17 +1,17 @@
 async function refresh() {
-	const statusIcons = document.getElementById('status-icons');
+	const statusIcons = document.getElementById("status-icons");
 	let dataRes;
 	try {
-		dataRes = await fetch("https://api.cinnamon.bot/api/status/", {cache: "no-cache"});
+		dataRes = await fetch("https://api.cinnamon.bot/api/status/", { cache: "no-cache" });
 	} catch {
-		const element = document.createElement('div');
+		const element = document.createElement("div");
 		element.classList.add("status-icon");
 		element.innerText = "🔥";
 		statusIcons.replaceChildren(element);
 		return;
 	}
 	const data = await dataRes.json();
-	let indicators = [];
+	const indicators = [];
 	for (const shard of data) {
 		const element = document.createElement("div");
 		let letter = "";
@@ -44,7 +44,7 @@ async function refresh() {
 	statusIcons.replaceChildren(...indicators);
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener("DOMContentLoaded", async () => {
 	refresh();
 	let secondsUntilRefresh = 30;
 	setInterval(async () => {

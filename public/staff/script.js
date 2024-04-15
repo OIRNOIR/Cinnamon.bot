@@ -1,6 +1,6 @@
 let staffLoaded = false;
 
-async function loadStaff (token) {
+async function loadStaff(token) {
 	if (staffLoaded) return;
 	showdown.setOption("openLinksInNewWindow", true);
 	showdown.setOption("simpleLineBreaks", true);
@@ -8,7 +8,7 @@ async function loadStaff (token) {
 	const converter = new showdown.Converter();
 	let dataRes;
 	try {
-		dataRes = await fetch("https://api.cinnamon.bot/api/staff/", {headers: {"X-Captcha-Token": token}});
+		dataRes = await fetch("https://api.cinnamon.bot/api/staff/", { headers: { "X-Captcha-Token": token } });
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
@@ -20,7 +20,7 @@ async function loadStaff (token) {
 	for (const category of data) {
 		const categoryElement = document.createElement("div");
 		categoryElement.classList.add("staff-category");
-		
+
 		// Setup category title
 		const categoryTitleElement = document.createElement("h1");
 		categoryTitleElement.innerText = category.name;
@@ -30,7 +30,7 @@ async function loadStaff (token) {
 		// Setup individual cards
 		const cardContainer = document.createElement("div");
 		cardContainer.classList.add("staff-category-cards", "large-grid");
-		
+
 		for (const card of category.members) {
 			const cardElement = document.createElement("div");
 			cardElement.classList.add("staff-card");
@@ -50,13 +50,13 @@ async function loadStaff (token) {
 			displayName.classList.add("staff-card-details-name");
 			displayName.innerText = card.displayName;
 			textDetails.appendChild(displayName);
-			
+
 			const pomelo = document.createElement("p");
 			pomelo.classList.add("staff-card-details-pomelo");
 			const usernameLink = document.createElement("a");
 			usernameLink.setAttribute("target", "_blank");
 			usernameLink.setAttribute("rel", "noreferrer noopener");
-			usernameLink.setAttribute("href", "https://discord.com/users/" + card.id);
+			usernameLink.setAttribute("href", `https://discord.com/users/${card.id}`);
 			usernameLink.innerText = card.username;
 			pomelo.appendChild(usernameLink);
 			textDetails.appendChild(pomelo);
