@@ -7,6 +7,10 @@
 	margin: auto;
 }
 
+#status-key p {
+	margin: 15px;
+}
+
 #status-icons {
 	display: flex;
 	flex-direction: unset;
