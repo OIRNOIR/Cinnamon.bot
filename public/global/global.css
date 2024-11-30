@@ -291,23 +291,23 @@ footer {
 }
 
 .visual-a {
-	background-image: url("https://assets.cinnamon.bot/transition-a.png");
+	background-image: url("https://assets.cinnamon.bot/transition-a.svg");
 }
 
 .visual-b {
-	background-image: url("https://assets.cinnamon.bot/transition-b.png");
+	background-image: url("https://assets.cinnamon.bot/transition-b.svg");
 }
 
 .visual-c {
-	background-image: url("https://assets.cinnamon.bot/transition-c.png");
+	background-image: url("https://assets.cinnamon.bot/transition-c.svg");
 }
 
 .visual-d {
-	background-image: url("https://assets.cinnamon.bot/transition-d.png");
+	background-image: url("https://assets.cinnamon.bot/transition-d.svg");
 }
 
 .visual-e {
-	background-image: url("https://assets.cinnamon.bot/transition-e.png");
+	background-image: url("https://assets.cinnamon.bot/transition-e.svg");
 }
 
 @media screen and (max-width: 1100px) {
