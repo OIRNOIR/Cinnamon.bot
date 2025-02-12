@@ -14,7 +14,10 @@ async function loadStaff() {
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
-	if (!dataRes.ok) return alert("There was a problem loading Cinnamon's staff page. Please join the support server and report this issue.");
+	if (!dataRes.ok)
+		return alert(
+			"There was a problem loading Cinnamon's staff page. Please join the support server and report this issue.",
+		);
 	staffLoaded = true;
 	const data = await dataRes.json();
 	const categoryContainer = document.getElementById("staff-categories");
