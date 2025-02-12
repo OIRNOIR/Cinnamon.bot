@@ -1,6 +1,8 @@
 let staffLoaded = false;
 
-async function loadStaff(token) {
+document.addEventListener("DOMContentLoaded", loadStaff);
+
+async function loadStaff() {
 	if (staffLoaded) return;
 	showdown.setOption("openLinksInNewWindow", true);
 	showdown.setOption("simpleLineBreaks", true);
@@ -8,11 +10,11 @@ async function loadStaff(token) {
 	const converter = new showdown.Converter();
 	let dataRes;
 	try {
-		dataRes = await fetch("https://api.cinnamon.bot/api/staff/", { headers: { "X-Captcha-Token": token } });
+		dataRes = await fetch("https://api.cinnamon.bot/api/staff/");
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
-	if (dataRes.status == 400) alert("Captcha Failed");
+	if (!dataRes.ok) return alert("There was a problem loading Cinnamon's staff page. Please join the support server and report this issue.");
 	staffLoaded = true;
 	const data = await dataRes.json();
 	const categoryContainer = document.getElementById("staff-categories");
