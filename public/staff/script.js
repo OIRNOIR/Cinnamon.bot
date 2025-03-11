@@ -10,7 +10,7 @@ async function loadStaff() {
 	const converter = new showdown.Converter();
 	let dataRes;
 	try {
-		dataRes = await fetch("https://api.cinnamon.bot/api/staff/");
+		dataRes = await fetch("https://api.cinnamon.bot/api/staff");
 	} catch {
 		return alert("Cinnamon's staff page is not available at this time. Please try again later.");
 	}
