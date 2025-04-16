@@ -25,5 +25,8 @@
 		"indentWidth": 1,
 		"ignore": ["package.json"],
 		"lineWidth": 120
+	},
+	"files": {
+		"ignore": ["public/lib/*.js"]
 	}
 }
