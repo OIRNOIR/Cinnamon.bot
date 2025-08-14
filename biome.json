@@ -1,8 +1,6 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -23,7 +21,10 @@
 		"formatWithErrors": false,
 		"indentStyle": "tab",
 		"indentWidth": 1,
-		"ignore": ["package.json"],
+		"includes": ["**"],
 		"lineWidth": 120
+	},
+	"files": {
+		"includes": ["**"]
 	}
 }
