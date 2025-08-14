@@ -43,3 +43,8 @@ async function turnstileCallback(token) {
 			}
 		}
 }
+
+if (turnstileCallback == undefined) {
+	// Do not mark unused
+	throw new Error("Could not define function");
+}

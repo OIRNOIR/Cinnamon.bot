@@ -21,7 +21,6 @@
 		"formatWithErrors": false,
 		"indentStyle": "tab",
 		"indentWidth": 1,
-		"includes": ["**"],
 		"lineWidth": 120
 	},
 	"files": {
