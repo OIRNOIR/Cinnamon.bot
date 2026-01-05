@@ -7,9 +7,10 @@
 		"group:monorepos",
 		"group:recommended",
 		"replacements:all",
-		"workarounds:all"
+		"workarounds:all",
+		"github>Omochice/renovate-config:deno"
 	],
-	"baseBranchPatterns": ["main", "go", "assets"],
+	"baseBranchPatterns": ["main", "assets"],
 	"packageRules": [
 		{
 			"matchDatasources": ["npm"],
