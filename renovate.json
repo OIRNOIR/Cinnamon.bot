@@ -10,7 +10,7 @@
 		"workarounds:all",
 		"github>Omochice/renovate-config:deno"
 	],
-	"baseBranchPatterns": ["main", "assets"],
+	"baseBranchPatterns": ["main", "assets", "go"],
 	"packageRules": [
 		{
 			"matchDatasources": ["npm"],
