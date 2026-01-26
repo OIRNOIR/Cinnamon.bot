@@ -4,6 +4,6 @@
 		"style:check": "deno x npm:@biomejs/biome ci ."
 	},
 	"imports": {
-		"@biomejs/biome": "npm:@biomejs/biome@2.3.12"
+		"@biomejs/biome": "npm:@biomejs/biome@2.3.13"
 	}
 }
