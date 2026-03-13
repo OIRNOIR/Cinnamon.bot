@@ -1,4 +1,7 @@
+let latestUpdate = 0;
+
 async function refresh() {
+	const thisUpdate = Date.now();
 	const statusIcons = document.getElementById("status-icons");
 	let dataRes;
 	try {
@@ -10,6 +13,8 @@ async function refresh() {
 		statusIcons.replaceChildren(element);
 		return;
 	}
+	if (thisUpdate < latestUpdate) return;
+	latestUpdate = thisUpdate;
 	const data = await dataRes.json();
 	const indicators = [];
 	for (const shard of data) {
